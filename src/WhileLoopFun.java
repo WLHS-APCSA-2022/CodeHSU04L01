@@ -19,6 +19,7 @@ Students will be able to:
         //more loop stuff
         ...
         //update loop control variable
+    }
  */
 
 
@@ -27,20 +28,48 @@ public class WhileLoopFun {
     public static void main(String[] args) {
         //count to 10
 
+        int counter = 1;
+        while(counter <= 10){
+            System.out.print(counter + " ");
+            counter+=2;
+        }
+
 
         //what does this code loop do? Do this without running it
+        System.out.println();
         int count = 2;
         while(count <= 100){
             System.out.print(count + " ");
             count *= 2;
+
         }
         System.out.println();
-        //write a loop that counts by 5 until you get to 100
-
+        //write a loop that counts by 5, starting at 0, until you get to 100
+        int startCount = 0;
+        while(startCount <= 100){
+            System.out.print(startCount + " ");
+            startCount += 5;
+        }
         //write a loop that counts down from 10 to 1 then prints "Blast off!"
+        System.out.println();
+        int countDown = 10;
+        while(countDown >= 1){
+            System.out.println(countDown);
+            countDown--;
+        }
+        System.out.println("Blast Off!");
 
         //loop mistakes and while vs do while loop
         //make an infinite loop happen
+        int newCount = 5;
+        while(newCount >= 10){
+            System.out.println("This statement has executed.");
+        }
+
+        //outside of CS A scope
+        do{
+            System.out.println("This will print at least once.");
+        }while(newCount >= 10);
 
 
     }
